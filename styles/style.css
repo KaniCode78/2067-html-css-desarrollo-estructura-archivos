@@ -6,10 +6,18 @@
     padding: 0;
 }
 
+:root {
+    --color-primario: #000000;
+    --color-secundario: #F6F6F6;
+    --color-terciario: #22D4FD;
+    --color-hover: #272727;
+    --fuentePrimaria: "Montserrat", serif;
+    --fuenteSecundaria: "Krona One", serif;
+}
 
 body {
-    background-color: #000000;
-    color: #F6F6F6;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
     /* height: 100vh; */
     box-sizing: border-box;
 }
@@ -18,23 +26,18 @@ body {
     padding: 2% 0% 0% 15%;
 }
 
-.header__menu{
+.header__menu {
     display: flex;
     gap: 80px;
 }
 
-.header__menu__link{
-    font-family: "Montserrat", serif;
+.header__menu__link {
+    font-family: var(--fuentePrimaria);
     font-size: 24px;
     font-weight: 600;
-    color: #22D4FD;
+    color: var(--color-terciario);
     text-decoration: none;
-    
 }
-
-
-
-
 
 .container {
     display: flex;
@@ -52,17 +55,16 @@ body {
 
 .presentacion__contenido__titulo {
     font-size: 36px;
-    font-family: "Krona One", serif;
+    font-family: var(--fuenteSecundaria);
 }
 
 .titulo-destaque {
-    color: #22D4FD;
-
+    color: var(--color-terciario)
 }
 
 .presentacion__contenido__texto {
     font-size: 24px;
-    font-family: "Montserrat", serif;
+    font-family: var(--fuentePrimaria);
 }
 
 .presentacion__enlaces {
@@ -74,37 +76,41 @@ body {
 }
 
 .presentacion__enlaces__subtitulo {
-    font-family: 'Krona One', serif;
+    font-family: var(--fuenteSecundaria);
     font-size: 24px;
     font-weight: 400;
 }
 
 .presentacion__enlaces__link {
-  border: 2px solid #22D4FD;
+    border: 2px solid var(--color-terciario);
     text-align: center;
     width: 378px;
     padding: 21.5px 0;
     border-radius: 8px;
-    font-family: "Montserrat", serif;
+    font-family: var(--fuentePrimaria);
     font-size: 24px;
     font-weight: 600;
     text-decoration: none;
-    color: #F6F6F6;
+    color: var(--color-secundario);
     display: flex;
-    gap: 10px ;
+    gap: 10px;
     justify-content: center;
 }
 
 .presentacion__enlaces__link:hover {
-    background-color: #272727;
+    background-color: var(--color-hover);
 }
 
-.footer{
-    background-color: #22D4FD;
+.footer {
+    background-color: var(--color-terciario);
     padding: 24px;
-    color: #000000;
+    color: var(--color-primario);
     text-align: center;
-    font-family: "Montserrat", serif;
+    font-family: var(--fuentePrimaria);
     font-size: 24px;
     font-weight: 400;
 }
+
+/*Inicia seccion sobre mi */
+
+
